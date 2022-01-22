@@ -1,6 +1,7 @@
 const express = require("express");
 
 const app = express();
+app.set('trust proxy', true)
 
 app.get("/", (req, res) => {
   res.send("ok");
